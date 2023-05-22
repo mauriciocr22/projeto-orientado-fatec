@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* 
+    Propriedades não usadas antes: 
+        "transition": adiciona efeito de transição em uma animação
+        "display": define a direção dos itens no layout
+        "flex-direction": define se os itens vao ser distribuidos em colunas ou linhas
+        "justify-content": organiza os itens dentro de um elemento a partir da distancia entre eles
+        "outline": altera as configurações de contorno do input
+*/
+
+body {
+    background-color: #24292F;
+    color: #b7bbc0;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #b7bbc0;
+}
+
+a:hover {
+    color: #00bbff;
+    transition: 0.4s;
+}
+
+header {
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.navbar {
+    width: 100%;
+    margin: 0 12rem;
+}
+
+.navbar span {
+    color: #00bbff;
+}
+
+header,
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper {
+    margin: 0 12rem;
+    display: flex;
+    justify-content: cente;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #b7bbc0;
+    background-color: #24292F;
+    font-size: 16px;
+    height: 2rem;
+    margin-bottom: 2rem;
+    color: #b7bbc0;
+}
+
+input:focus {
+    border-color: #00bbff;
+    transition: 0.5s;
+}
+
+textarea {
+    background-color: #24292F;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 1rem;
+    padding: 6px;
+}
+
+textarea:focus {
+    outline: none !important;
+    border-color: #00bbff;
+}
+
+#submit-button {
+    background-color: #00bbff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 1rem;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #0000004d;
+    transition: 0.2s;
+}
+
+img {
+    border-radius: 8px;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+/*  Estilização da Home Page */
+
+.mauricio-card {
+    display: flex;
+    width: 50%;
+    background-color: transparent;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.mauricio-card-info {
+    width: 100%;
+    padding: 0 0 0 2rem;
+    display: flex;
+    flex-direction: column
+}
+
+.mauricio-card-info h3 {
+    margin-top: 0;
+}
+
+.murilo-card {
+    display: flex;
+    width: 50%;
+    background-color: transparent;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.murilo-card-info {
+    width: 100%;
+    padding: 2rem 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: flex-end;
+}
+
+
+.wrapper>h2 {
+    text-align: center;
+    margin: 32px 0 32px 0;
+}
+
+
+.student-icons i {
+    font-size: 34px
+}
+
+/* Estilização da página dos estudantes */
+
+.student-section {
+    margin-top: 84px;
+}
+
+.student-section img {
+    height: 372px;
+}
+
+.student-about {
+    padding: 0 0 0 2rem;
+}
+
+.student-about p {
+    font-size: 20px;
+}
+
+.student-about h2 {
+    font-size: 26px;
+}
+
+.table-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-section h2 {
+    text-align: center;
+}
+
+.table-section>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 900px;
+    text-align: center;
+    border-radius: 8px;
+    border-collapse: collapse;
+}
+
+table thead tr td {
+    font-size: large;
+    padding: 12px;
+    background-color: #0000004d;
+}
+
+table thead tr {
+    border: 1px solid #1b1b1b;
+}
+
+table tbody tr>td {
+    border: 1px solid #1b1b1b;
+    padding: 8px;
+}
+
+.student-sites {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.student-sites>div {
+    width: 30%;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #0000004d;
+}
+
+.student-sites div>h3 {
+    padding-bottom: 22px;
+    text-align: center;
+    font-size: 28px;
+    border-bottom: 1px solid #b7bbc0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 16px;
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.murilo-sites {}
